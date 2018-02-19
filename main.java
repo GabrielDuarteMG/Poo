@@ -3,7 +3,7 @@ import java.*;
 import java.util.*;
 public class main {
  public static void main(String[] args) {
-  System.out.println("Programa��o Orientada a Objetos\nFacudade: UNIPAC\nAluno: Gabriel Duarte dos Santos\nProfessor: Diego Alves da Silva\nPeriodo: Primeiro\n");
+  System.out.println("Programacao Orientada a Objetos\nFacudade: UNIPAC\nAluno: Gabriel Duarte dos Santos\nProfessor: Diego Alves da Silva\nPeriodo: Primeiro\n");
   Menu();
  }
  static void Menu() {
