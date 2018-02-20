@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.*;
 import java.util.*;
@@ -6,6 +7,7 @@ public class main {
   System.out.println("Programacao Orientada a Objetos\nFacudade: UNIPAC\nAluno: Gabriel Duarte dos Santos\nProfessor: Diego Alves da Silva\nPeriodo: Primeiro\n");
   Menu();
  }
+
  static void Menu() {
   Scanner scanner = new Scanner(System.in);
   System.out.println("1 - Le 2 numeros e faz a soma dos mesmos");
@@ -16,6 +18,7 @@ public class main {
   System.out.println("6 - Calcula o KM/h");
   System.out.println("7 - Le 3 notas e mostra se foi ou nao aprovado");
   System.out.println("8 - Le uma quantidade de notas e mostra usando a media se foi ou nao aprovado");
+  System.out.println("9 - Exemplo Classe Pessoa");
   int primeiro = scanner.nextInt();
   switch (primeiro) {
    case 1:
@@ -42,6 +45,9 @@ public class main {
    case 8:
     Ex8();
     break;
+   case 9:
+	    Ex9();
+	    break;
    default:
     return;
   }
@@ -83,6 +89,9 @@ public class main {
      case 8:
       Ex8();
       break;
+     case 9:
+ 	    Ex9();
+ 	    break;
      default:
       return;
     }
@@ -178,5 +187,33 @@ public class main {
   else
    System.out.println("Voce foi reprovado com " + segundo + " pontos");
   FinalMenu(8);
+ }
+ static void Ex9() {
+	 /*
+	  * 1. Quais são as características de pessoa, menino e menina?
+	  *  R_:Peso,Altura,Raça,Nome;
+	  * 2. Quais são as ações de uma pessoa?
+	  *  R_:Andar,Falar,Correr
+	  * 3. Como ficaria a implementação deste cenário em Java?
+	  * */
+	 Pessoa Pessoa1 = new Pessoa();
+	 Pessoa1.InserirAltura(1.80);
+	 Pessoa1.InserirPeso(75.0f);
+	 Pessoa1.InserirNome("Gabriel");
+	 Pessoa1.InserirRaca("Branco");
+	 Pessoa1.Correr();
+	 FinalMenu(9); 
+ }
+ static void Ex10() {
+	 /*
+	  * 10- Utilize seus conhecimentos para criar um cenário para representar veículo, carro, moto,
+      *	caminhão, avião e barco respondendo as seguintes questões
+	  * 1. Quais são as características de cada um?
+	  *  R_:
+	  * 2. Quais são as ações de uma pessoa?
+	  *  R_:Andar,Falar,Correr
+	  * 3. Como ficaria a implementação deste cenário em Java?
+	  * */
+
  }
 }
