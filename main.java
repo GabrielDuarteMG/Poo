@@ -48,6 +48,9 @@ public class main {
    case 9:
 	    Ex9();
 	    break;
+   case 10:
+ 	    Ex10();
+ 	    break;
    default:
     return;
   }
@@ -92,6 +95,9 @@ public class main {
      case 9:
  	    Ex9();
  	    break;
+     case 10:
+  	    Ex10();
+  	    break;
      default:
       return;
     }
@@ -207,13 +213,38 @@ public class main {
  static void Ex10() {
 	 /*
 	  * 10- Utilize seus conhecimentos para criar um cenário para representar veículo, carro, moto,
-      *	caminhão, avião e barco respondendo as seguintes questões
-	  * 1. Quais são as características de cada um?
-	  *  R_:
-	  * 2. Quais são as ações de uma pessoa?
-	  *  R_:Andar,Falar,Correr
-	  * 3. Como ficaria a implementação deste cenário em Java?
-	  * */
-
+	      *	caminhão, avião e barco respondendo as seguintes questões
+		  * 1. Quais são as características de cada um?
+	  *  R_:O Carro é um veiculo auto motor de passeio e pouco ultilitario, a moto e um veiculo de locomocao,
+	  *  o caminhao e um veiculo ultilitario de carga terrestrem, o aviao e um veiculo ultilitario de carga ou de passageiros aereo,
+	  *  e o barco e um veiculo ultilitario de carga ou de passageiros aquatico.
+	  * 2. Quais são as ações de cada um?
+	  *  R_:Ligar, Desligar, Andar, Freiar.
+	  * 3. De um exemplo de classe e objeto utilizando a linguagem Java
+	 */
+	 Veiculo Barco = new Veiculo();
+	 Barco.SetNome("Barco de vela");
+	 Barco.SetCombustivel("Vento");
+	 Barco.SetLocal("Mar");
+	 Barco.SetMissao("Passeio");
+	 Veiculo Carro = new Veiculo();
+	 Carro.SetNome("Carro sedan");
+	 Carro.SetCombustivel("Gasolina");
+	 Carro.SetLocal("Terra");
+	 Carro.SetMissao("Passeio");
+	 Veiculo Caminhao = new Veiculo();
+	 Caminhao.SetNome("Caminhao 3x4");
+	 Caminhao.SetCombustivel("Diesel");
+	 Caminhao.SetLocal("Terra");
+	 Caminhao.SetMissao("Carregar cargas");
+	 FinalMenu(10); 
+ }
+ static void Ex11() {
+	 /*
+	  * Crie uma classe animal, utilizando suas características como atributo. Também crie
+	  * objetos para 5 tipos de animais diferentes.
+	 */
+	 Animais Animal1 = new Animais();
+	 
  }
 }
