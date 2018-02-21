@@ -245,6 +245,59 @@ public class main {
 	  * objetos para 5 tipos de animais diferentes.
 	 */
 	 Animais Animal1 = new Animais();
+	 Animal1.SetRaca("Cachorro");
+	 Animal1.SetTipo("Terrestre");
+	 Animal1.SetClasseAlimenticia("Onivoro");
+	 Animal1.SetClasse("Mamifero");
+	 Animais Animal2 = new Animais();
+	 Animal2.SetRaca("Gato");
+	 Animal2.SetTipo("Terrestre");
+	 Animal2.SetClasseAlimenticia("Onivoro");
+	 Animal2.SetClasse("Mamifero");
+	 Animais Animal3 = new Animais();
+	 Animal3.SetRaca("Peixe");
+	 Animal3.SetTipo("Aquatico");
+	 Animal3.SetClasseAlimenticia("Onivoro");
+	 Animal3.SetClasse("Peixe");
+	 Animais Animal4 = new Animais();
+	 Animal4.SetRaca("Galinha");
+	 Animal4.SetTipo("Terrestre");
+	 Animal4.SetClasseAlimenticia("Herbivoro");
+	 Animal4.SetClasse("Ave");
+	 Animais Animal5 = new Animais();
+	 Animal5.SetRaca("Cobra");
+	 Animal5.SetTipo("Terrestre");
+	 Animal5.SetClasseAlimenticia("Carnivora");
+	 Animal5.SetClasse("Reptio");
 	 
+ }
+ static void Ex12() {
+	 /*
+	 *	Crie a classe histórico de transferência, nesta classe você deve armazenar o cpf de
+	 *	quem realizou a transferência (cpfOrigem), o cpf de quem recebeu (cpfDestino) e o valor
+	 *	recebido.
+	 */
+	 CPFBase BancoDeDados = new CPFBase();
+	 BancoDeDados.SetcpfOrigem(1111111111);
+	 BancoDeDados.SetcpfDestino(1111111111);
+	 BancoDeDados.SetValor(200);
+	 BancoDeDados.GerenateHistorico();
+	 BancoDeDados.SetcpfOrigem(1111111111);
+	 BancoDeDados.SetcpfDestino(1111111111);
+	 BancoDeDados.SetValor(50);
+	 BancoDeDados.GerenateHistorico();
+	 BancoDeDados.SetcpfOrigem(1111111111);
+	 BancoDeDados.SetcpfDestino(1111111111);
+	 BancoDeDados.SetValor(250);
+	 BancoDeDados.GerenateHistorico();
+	 BancoDeDados.SetcpfOrigem(1111111111);
+	 BancoDeDados.SetcpfDestino(1111111111);
+	 BancoDeDados.SetValor(240);
+	 BancoDeDados.GerenateHistorico();
+	 BancoDeDados.SetcpfOrigem(1111111111);
+	 BancoDeDados.SetcpfDestino(1111111111);
+	 BancoDeDados.SetValor(300);
+	 BancoDeDados.GerenateHistorico();
+	 BancoDeDados.ExibirTodasTransacoes();
  }
 }
