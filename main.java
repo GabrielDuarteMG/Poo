@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.*;
 import java.util.*;
@@ -19,6 +18,11 @@ public class main {
   System.out.println("7 - Le 3 notas e mostra se foi ou nao aprovado");
   System.out.println("8 - Le uma quantidade de notas e mostra usando a media se foi ou nao aprovado");
   System.out.println("9 - Exemplo Classe Pessoa");
+  System.out.println("10 - Exemplo Classe Veiculo");
+  System.out.println("11 - Exemplo Classe Animal");
+  System.out.println("12 - Exemplo Classe CPF");
+  System.out.println("13 - Exemplo Classe Festa");
+
   int primeiro = scanner.nextInt();
   switch (primeiro) {
    case 1:
@@ -46,11 +50,20 @@ public class main {
     Ex8();
     break;
    case 9:
-	    Ex9();
-	    break;
+    Ex9();
+    break;
    case 10:
- 	    Ex10();
- 	    break;
+    Ex10();
+    break;
+   case 11:
+    Ex11();
+    break;
+   case 12:
+    Ex12();
+    break;
+   case 13:
+    Ex13();
+    break;
    default:
     return;
   }
@@ -93,11 +106,21 @@ public class main {
       Ex8();
       break;
      case 9:
- 	    Ex9();
- 	    break;
+      Ex9();
+      break;
      case 10:
-  	    Ex10();
-  	    break;
+      Ex10();
+      break;
+     case 11:
+      Ex11();
+      break;
+     case 12:
+      Ex12();
+      break;
+     case 13:
+      Ex13();
+      break;
+
      default:
       return;
     }
@@ -195,109 +218,128 @@ public class main {
   FinalMenu(8);
  }
  static void Ex9() {
-	 /*
-	  * 1. Quais são as características de pessoa, menino e menina?
-	  *  R_:Peso,Altura,Raça,Nome;
-	  * 2. Quais são as ações de uma pessoa?
-	  *  R_:Andar,Falar,Correr
-	  * 3. Como ficaria a implementação deste cenário em Java?
-	  * */
-	 Pessoa Pessoa1 = new Pessoa();
-	 Pessoa1.InserirAltura(1.80);
-	 Pessoa1.InserirPeso(75.0f);
-	 Pessoa1.InserirNome("Gabriel");
-	 Pessoa1.InserirRaca("Branco");
-	 Pessoa1.Correr();
-	 FinalMenu(9); 
+  /*
+   * 1. Quais são as características de pessoa, menino e menina?
+   *  R_:Peso,Altura,Raça,Nome;
+   * 2. Quais são as ações de uma pessoa?
+   *  R_:Andar,Falar,Correr
+   * 3. Como ficaria a implementação deste cenário em Java?
+   * */
+  Pessoa Pessoa1 = new Pessoa();
+  Pessoa1.InserirAltura(1.80);
+  Pessoa1.InserirPeso(75.0f);
+  Pessoa1.InserirNome("Gabriel");
+  Pessoa1.InserirRaca("Branco");
+  Pessoa1.Correr();
+  FinalMenu(9);
  }
  static void Ex10() {
-	 /*
-	  * 10- Utilize seus conhecimentos para criar um cenário para representar veículo, carro, moto,
-	      *	caminhão, avião e barco respondendo as seguintes questões
-		  * 1. Quais são as características de cada um?
-	  *  R_:O Carro é um veiculo auto motor de passeio e pouco ultilitario, a moto e um veiculo de locomocao,
-	  *  o caminhao e um veiculo ultilitario de carga terrestrem, o aviao e um veiculo ultilitario de carga ou de passageiros aereo,
-	  *  e o barco e um veiculo ultilitario de carga ou de passageiros aquatico.
-	  * 2. Quais são as ações de cada um?
-	  *  R_:Ligar, Desligar, Andar, Freiar.
-	  * 3. De um exemplo de classe e objeto utilizando a linguagem Java
-	 */
-	 Veiculo Barco = new Veiculo();
-	 Barco.SetNome("Barco de vela");
-	 Barco.SetCombustivel("Vento");
-	 Barco.SetLocal("Mar");
-	 Barco.SetMissao("Passeio");
-	 Veiculo Carro = new Veiculo();
-	 Carro.SetNome("Carro sedan");
-	 Carro.SetCombustivel("Gasolina");
-	 Carro.SetLocal("Terra");
-	 Carro.SetMissao("Passeio");
-	 Veiculo Caminhao = new Veiculo();
-	 Caminhao.SetNome("Caminhao 3x4");
-	 Caminhao.SetCombustivel("Diesel");
-	 Caminhao.SetLocal("Terra");
-	 Caminhao.SetMissao("Carregar cargas");
-	 FinalMenu(10); 
+  /*
+   * 10- Utilize seus conhecimentos para criar um cenário para representar veículo, carro, moto,
+   *	caminhão, avião e barco respondendo as seguintes questões
+   * 1. Quais são as características de cada um?
+   *  R_:O Carro é um veiculo auto motor de passeio e pouco ultilitario, a moto e um veiculo de locomocao,
+   *  o caminhao e um veiculo ultilitario de carga terrestrem, o aviao e um veiculo ultilitario de carga ou de passageiros aereo,
+   *  e o barco e um veiculo ultilitario de carga ou de passageiros aquatico.
+   * 2. Quais são as ações de cada um?
+   *  R_:Ligar, Desligar, Andar, Freiar.
+   * 3. De um exemplo de classe e objeto utilizando a linguagem Java
+   */
+  Veiculo Barco = new Veiculo();
+  Barco.SetNome("Barco de vela");
+  Barco.SetCombustivel("Vento");
+  Barco.SetLocal("Mar");
+  Barco.SetMissao("Passeio");
+  Veiculo Carro = new Veiculo();
+  Carro.SetNome("Carro sedan");
+  Carro.SetCombustivel("Gasolina");
+  Carro.SetLocal("Terra");
+  Carro.SetMissao("Passeio");
+  Veiculo Caminhao = new Veiculo();
+  Caminhao.SetNome("Caminhao 3x4");
+  Caminhao.SetCombustivel("Diesel");
+  Caminhao.SetLocal("Terra");
+  Caminhao.SetMissao("Carregar cargas");
+  FinalMenu(10);
  }
  static void Ex11() {
-	 /*
-	  * Crie uma classe animal, utilizando suas características como atributo. Também crie
-	  * objetos para 5 tipos de animais diferentes.
-	 */
-	 Animais Animal1 = new Animais();
-	 Animal1.SetRaca("Cachorro");
-	 Animal1.SetTipo("Terrestre");
-	 Animal1.SetClasseAlimenticia("Onivoro");
-	 Animal1.SetClasse("Mamifero");
-	 Animais Animal2 = new Animais();
-	 Animal2.SetRaca("Gato");
-	 Animal2.SetTipo("Terrestre");
-	 Animal2.SetClasseAlimenticia("Onivoro");
-	 Animal2.SetClasse("Mamifero");
-	 Animais Animal3 = new Animais();
-	 Animal3.SetRaca("Peixe");
-	 Animal3.SetTipo("Aquatico");
-	 Animal3.SetClasseAlimenticia("Onivoro");
-	 Animal3.SetClasse("Peixe");
-	 Animais Animal4 = new Animais();
-	 Animal4.SetRaca("Galinha");
-	 Animal4.SetTipo("Terrestre");
-	 Animal4.SetClasseAlimenticia("Herbivoro");
-	 Animal4.SetClasse("Ave");
-	 Animais Animal5 = new Animais();
-	 Animal5.SetRaca("Cobra");
-	 Animal5.SetTipo("Terrestre");
-	 Animal5.SetClasseAlimenticia("Carnivora");
-	 Animal5.SetClasse("Reptio");
-	 
+  /*
+   * Crie uma classe animal, utilizando suas características como atributo. Também crie
+   * objetos para 5 tipos de animais diferentes.
+   */
+  Animais Animal1 = new Animais();
+  Animal1.SetRaca("Cachorro");
+  Animal1.SetTipo("Terrestre");
+  Animal1.SetClasseAlimenticia("Onivoro");
+  Animal1.SetClasse("Mamifero");
+  Animais Animal2 = new Animais();
+  Animal2.SetRaca("Gato");
+  Animal2.SetTipo("Terrestre");
+  Animal2.SetClasseAlimenticia("Onivoro");
+  Animal2.SetClasse("Mamifero");
+  Animais Animal3 = new Animais();
+  Animal3.SetRaca("Peixe");
+  Animal3.SetTipo("Aquatico");
+  Animal3.SetClasseAlimenticia("Onivoro");
+  Animal3.SetClasse("Peixe");
+  Animais Animal4 = new Animais();
+  Animal4.SetRaca("Galinha");
+  Animal4.SetTipo("Terrestre");
+  Animal4.SetClasseAlimenticia("Herbivoro");
+  Animal4.SetClasse("Ave");
+  Animais Animal5 = new Animais();
+  Animal5.SetRaca("Cobra");
+  Animal5.SetTipo("Terrestre");
+  Animal5.SetClasseAlimenticia("Carnivora");
+  Animal5.SetClasse("Reptio");
+  FinalMenu(11);
  }
  static void Ex12() {
-	 /*
-	 *	Crie a classe histórico de transferência, nesta classe você deve armazenar o cpf de
-	 *	quem realizou a transferência (cpfOrigem), o cpf de quem recebeu (cpfDestino) e o valor
-	 *	recebido.
-	 */
-	 CPFBase BancoDeDados = new CPFBase();
-	 BancoDeDados.SetcpfOrigem(1111111111);
-	 BancoDeDados.SetcpfDestino(1111111111);
-	 BancoDeDados.SetValor(200);
-	 BancoDeDados.GerenateHistorico();
-	 BancoDeDados.SetcpfOrigem(1111111111);
-	 BancoDeDados.SetcpfDestino(1111111111);
-	 BancoDeDados.SetValor(50);
-	 BancoDeDados.GerenateHistorico();
-	 BancoDeDados.SetcpfOrigem(1111111111);
-	 BancoDeDados.SetcpfDestino(1111111111);
-	 BancoDeDados.SetValor(250);
-	 BancoDeDados.GerenateHistorico();
-	 BancoDeDados.SetcpfOrigem(1111111111);
-	 BancoDeDados.SetcpfDestino(1111111111);
-	 BancoDeDados.SetValor(240);
-	 BancoDeDados.GerenateHistorico();
-	 BancoDeDados.SetcpfOrigem(1111111111);
-	 BancoDeDados.SetcpfDestino(1111111111);
-	 BancoDeDados.SetValor(300);
-	 BancoDeDados.GerenateHistorico();
-	 BancoDeDados.ExibirTodasTransacoes();
+  /*
+   *	Crie a classe histórico de transferência, nesta classe você deve armazenar o cpf de
+   *	quem realizou a transferência (cpfOrigem), o cpf de quem recebeu (cpfDestino) e o valor
+   *	recebido.
+   */
+  CPFBase BancoDeDados = new CPFBase();
+  BancoDeDados.SetcpfOrigem(1111111111);
+  BancoDeDados.SetcpfDestino(1111111111);
+  BancoDeDados.SetValor(200);
+  BancoDeDados.GerenateHistorico();
+  BancoDeDados.SetcpfOrigem(1111111111);
+  BancoDeDados.SetcpfDestino(1111111111);
+  BancoDeDados.SetValor(50);
+  BancoDeDados.GerenateHistorico();
+  BancoDeDados.SetcpfOrigem(1111111111);
+  BancoDeDados.SetcpfDestino(1111111111);
+  BancoDeDados.SetValor(250);
+  BancoDeDados.GerenateHistorico();
+  BancoDeDados.SetcpfOrigem(1111111111);
+  BancoDeDados.SetcpfDestino(1111111111);
+  BancoDeDados.SetValor(240);
+  BancoDeDados.GerenateHistorico();
+  BancoDeDados.SetcpfOrigem(1111111111);
+  BancoDeDados.SetcpfDestino(1111111111);
+  BancoDeDados.SetValor(300);
+  BancoDeDados.GerenateHistorico();
+  BancoDeDados.ExibirTodasTransacoes();
+  FinalMenu(12);
+ }
+ static void Ex13() {
+  /*
+   * Crie e classe Lista de autorização, nesta classe você deverá armazenar o nome do
+   *	evento, e o nome das pessoas que estão liberadas para entrar no mesmo.
+   */
+  Scanner scanner = new Scanner(System.in);
+  Festa HipHopParty = new Festa();
+  HipHopParty.SetNomeDaFesta("Batalha do Beco");
+  HipHopParty.AdicionarNaLista("Gabriel");
+  HipHopParty.AdicionarNaLista("Daniel");
+  HipHopParty.AdicionarNaLista("Lucas");
+  String NomeDesejado = scanner.next();
+  if (HipHopParty.VerificarLista(NomeDesejado) == true)
+   System.out.println("Autorizado");
+  else
+   System.out.println("Nao consta na lista");
+  FinalMenu(13);
  }
 }
