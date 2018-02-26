@@ -71,13 +71,14 @@ public class main {
  static void FinalMenu(int Ex) {
   Scanner scanner = new Scanner(System.in);
   System.out.println("Deseja Fechar?(1 -Sim //0 -Nao)");
-  int Resposta = scanner.nextInt();
-  if (Resposta == 1)
+  Integer Resposta = scanner.nextInt();
+  int a = 1;
+  if (Resposta.equals(a))
    return;
   else {
    System.out.println("Deseja repetir o ex?(1 -Sim //0 -Nao)");
    Resposta = scanner.nextInt();
-   if (Resposta == 0)
+   if (Resposta.equals(0))
     Menu();
    else {
     switch (Ex) {
@@ -139,7 +140,9 @@ public class main {
  static void Ex2() {
   Scanner scanner = new Scanner(System.in);
   int primeiro = scanner.nextInt();
-  if (primeiro % 2 == 0)
+  Integer a,x = 0;
+  a =primeiro % 2;
+  if (a.equals(x))
    System.out.println(primeiro + 2);
   else
    System.out.println(primeiro + 1);
@@ -148,7 +151,9 @@ public class main {
  static void Ex3() {
   Scanner scanner = new Scanner(System.in);
   int primeiro = scanner.nextInt();
-  if (primeiro % 2 == 0)
+  Integer a,x = 0;
+  a =primeiro % 2;
+  if (a.equals(x))
    System.out.println(primeiro + " e par");
   else
    System.out.println(primeiro + " e impar");
@@ -219,11 +224,11 @@ public class main {
  }
  static void Ex9() {
   /*
-   * 1. Quais são as características de pessoa, menino e menina?
-   *  R_:Peso,Altura,Raça,Nome;
-   * 2. Quais são as ações de uma pessoa?
+   * 1. Quais sï¿½o as caracterï¿½sticas de pessoa, menino e menina?
+   *  R_:Peso,Altura,Raï¿½a,Nome;
+   * 2. Quais sï¿½o as aï¿½ï¿½es de uma pessoa?
    *  R_:Andar,Falar,Correr
-   * 3. Como ficaria a implementação deste cenário em Java?
+   * 3. Como ficaria a implementaï¿½ï¿½o deste cenï¿½rio em Java?
    * */
   Pessoa Pessoa1 = new Pessoa();
   Pessoa1.InserirAltura(1.80);
@@ -235,13 +240,13 @@ public class main {
  }
  static void Ex10() {
   /*
-   * 10- Utilize seus conhecimentos para criar um cenário para representar veículo, carro, moto,
-   *	caminhão, avião e barco respondendo as seguintes questões
-   * 1. Quais são as características de cada um?
-   *  R_:O Carro é um veiculo auto motor de passeio e pouco ultilitario, a moto e um veiculo de locomocao,
+   * 10- Utilize seus conhecimentos para criar um cenï¿½rio para representar veï¿½culo, carro, moto,
+   *	caminhï¿½o, aviï¿½o e barco respondendo as seguintes questï¿½es
+   * 1. Quais sï¿½o as caracterï¿½sticas de cada um?
+   *  R_:O Carro ï¿½ um veiculo auto motor de passeio e pouco ultilitario, a moto e um veiculo de locomocao,
    *  o caminhao e um veiculo ultilitario de carga terrestrem, o aviao e um veiculo ultilitario de carga ou de passageiros aereo,
    *  e o barco e um veiculo ultilitario de carga ou de passageiros aquatico.
-   * 2. Quais são as ações de cada um?
+   * 2. Quais sï¿½o as aï¿½ï¿½es de cada um?
    *  R_:Ligar, Desligar, Andar, Freiar.
    * 3. De um exemplo de classe e objeto utilizando a linguagem Java
    */
@@ -264,7 +269,7 @@ public class main {
  }
  static void Ex11() {
   /*
-   * Crie uma classe animal, utilizando suas características como atributo. Também crie
+   * Crie uma classe animal, utilizando suas caracterï¿½sticas como atributo. Tambï¿½m crie
    * objetos para 5 tipos de animais diferentes.
    */
   Animais Animal1 = new Animais();
@@ -296,8 +301,8 @@ public class main {
  }
  static void Ex12() {
   /*
-   *	Crie a classe histórico de transferência, nesta classe você deve armazenar o cpf de
-   *	quem realizou a transferência (cpfOrigem), o cpf de quem recebeu (cpfDestino) e o valor
+   *	Crie a classe histï¿½rico de transferï¿½ncia, nesta classe vocï¿½ deve armazenar o cpf de
+   *	quem realizou a transferï¿½ncia (cpfOrigem), o cpf de quem recebeu (cpfDestino) e o valor
    *	recebido.
    */
   CPFBase BancoDeDados = new CPFBase();
@@ -326,8 +331,8 @@ public class main {
  }
  static void Ex13() {
   /*
-   * Crie e classe Lista de autorização, nesta classe você deverá armazenar o nome do
-   *	evento, e o nome das pessoas que estão liberadas para entrar no mesmo.
+   * Crie e classe Lista de autorizaï¿½ï¿½o, nesta classe vocï¿½ deverï¿½ armazenar o nome do
+   *	evento, e o nome das pessoas que estï¿½o liberadas para entrar no mesmo.
    */
   Scanner scanner = new Scanner(System.in);
   Festa HipHopParty = new Festa();
